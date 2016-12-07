@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.6(2016-12-07)
+
+* add static assets
+
 ## 0.0.5(2016-12-07)
 
 * add test
