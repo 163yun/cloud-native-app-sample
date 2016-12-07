@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5(2016-12-07)
+
+* add test
+
 ## 0.0.4(2016-12-07)
 
 * add GitHub api
