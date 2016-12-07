@@ -13,8 +13,6 @@ import java.util.Set;
  * Time: 11:37
  */
 public interface UserRepository extends GraphRepository<User> {
-    List<User> findByName(@Param("name") String screenName);
-
     @Query("MATCH (user:User) WHERE has(user.screenName)\n" +
             "WITH user\n" +
             "ORDER BY user.screenName ASC\n" +
