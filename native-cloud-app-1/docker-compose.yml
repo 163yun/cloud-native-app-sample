@@ -1,0 +1,19 @@
+neo4j:
+  container_name: neo4j
+  image: hub.c.163.com/bingohuang/neo4j:2.3
+  ports:
+   - "7474:7474"
+  volumes:
+   - ~/neo4j/2.3/data:/data
+
+native-cloud-app:
+  container_name: native-cloud-app
+  image: hub.c.163.com/bingohuang/native-cloud-app:latest
+  ports:
+    - "8080:8080"
+  links:
+    - neo4j
+  environment:
+    - GITHUB_OAUTH=8cf7b1ad3206c41e385226947648e332aa87c679
+    - GITHUB_ENDPOINT=https://api.github.com
+    - SPRING_PROFILES_ACTIVE=pro

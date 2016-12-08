@@ -1,8 +1,8 @@
 package com.bingohuang;
 
-import com.bingohuang.info.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -12,8 +12,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * Time: 13:48
  */
 @SpringBootApplication
-@EnableNeo4jRepositories(basePackageClasses = {UserRepository.class})
+@EnableNeo4jRepositories(basePackages = {"com.bingohuang.info"})
 @EnableTransactionManagement
+@EntityScan({ "com.bingohuang.info", "BOOT-INF.classes.com.bingohuang.info" })
 public class NativeCloudApplication {
     public static void main(String[] args)  {
         SpringApplication.run(NativeCloudApplication.class, args);

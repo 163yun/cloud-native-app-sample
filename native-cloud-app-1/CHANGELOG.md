@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.7(2016-12-08)
+
+* add docker compose
+
 ## 0.0.6(2016-12-07)
 
 * add static assets

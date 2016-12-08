@@ -6,7 +6,7 @@
 
     <groupId>com.bingohuang</groupId>
     <artifactId>native-cloud-app</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.7-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
